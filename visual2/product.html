@@ -199,11 +199,11 @@
 									<div class="row">
 										<div class="col-sm-3 wow fadeInUp">
 											<div class="thumbnail-home">
-												<a href="">
-													<img src="images/ami/product1.png">
+												<a href="#" class="product-link" data-toggle="modal" data-target="#productModal" data-title="Kawat Galvanis BWG" data-description="Solusi konstruksi yang terbuat dari kawat baja galvanis berkualitas tinggi yang dikepang atau dirajut untuk membentuk struktur kisi yang kuat dan tahan lama" data-image="images/ami/product1.png">
+													<img src="images/ami/product1.png" alt="Kawat Galvanis BWG">
 													<div class="title-thumbnail-home">
 														<h2>Kawat Galvanis BWG</h2>
-														<p>Solusi konstruksi yang terbuat dari kawat baja galvanis berkualitas tinggi yang dikepang atau dirajut untuk membentuk struktur kisi yang kuat dan tahan lama</p>
+														<p>Solusi konstruksi yang terbuat dari kawat baja galvanis berkualitas tinggi...</p>
 													</div>
 												</a>
 											</div>
@@ -356,12 +356,41 @@
 			</div>
 		</div>
 	</div>
+	<!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="productModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <img id="productImage" src="" alt="" class="img-responsive" style="margin-bottom: 20px;">
+                    <p id="productDescription"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/wow.js"></script>
 	<script src="js/jquery.fancybox.pack.js"></script>
 	<script>
+		$(document).ready(function () {
+            $('.product-link').click(function () {
+                var title = $(this).data('title');
+                var description = $(this).data('description');
+                var image = $(this).data('image');
+
+                $('#productModalLabel').text(title);
+                $('#productDescription').text(description);
+                $('#productImage').attr('src', image);
+            });
+        });
 		$(function () {
 			/* popup gallery */
 			$('.fancybox').fancybox({
