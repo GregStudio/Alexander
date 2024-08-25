@@ -124,7 +124,6 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
 		gtag('config', 'G-RH6601RZQ9');
 	</script>
 </head>
@@ -137,7 +136,6 @@
 						<p><img src="images/iconMail.svg" alt="iconMail" width="20px">
 							<a href="mailto:amibronjong02@gmail.com">amibronjong02@gmail.com</a></p>
 					</div>
-
 					<div class="col-md-3">
 						<p><img src="images/iconPhone.svg" alt="iconPhone" width="20px">
 							<a href="http://wa.me/6287866719772">+62 878-6671-9772</a></p>
@@ -343,7 +341,6 @@
 				</div>
 			</div>
 		</footer>
-
 		<div id="button-mobile">
 			<div class="menu-button-mobile">
 				<ul class="list-inline">
@@ -354,7 +351,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Modal -->
     <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel">
         <div class="modal-dialog" role="document">
@@ -373,7 +369,6 @@
             </div>
         </div>
     </div>
-	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
@@ -385,8 +380,7 @@
                 var title = $(this).data('title');
                 var description = $(this).data('description');
                 var image = $(this).data('image');
-
-                $('#productModalLabel').text(title);
+				$('#productModalLabel').text(title);
                 $('#productDescription').text(description);
                 $('#productImage').attr('src', image);
             });
