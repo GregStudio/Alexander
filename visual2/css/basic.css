@@ -46,7 +46,7 @@ div#footerlink .col-sm-5:before {
     height: 50%;
     top: 50%;
     left: -50px;
-    background: url(../images/orangelines.svg);
+    background: url(../images/bluelines.svg);
 	background-size: 150%;
     transform: translateY(-50%);
 }
@@ -296,7 +296,7 @@ label.form-input span {
     position: absolute;
     width: 130px;
     height: 80px;
-    background: url(../images/orangelines.svg);
+    background: url(../images/bluelines.svg);
     left: 7px;
     bottom: -8px;
     background-size: 100%;
@@ -1228,7 +1228,7 @@ div#footerlink .col-sm-5:before {
     height: 100px;
     top: -40px;
     left: 50%;
-    background: url(../images/orangelines.svg);
+    background: url(../images/bluelines.svg);
     background-size: 70%;
     transform: translateX(-50%);
 }
